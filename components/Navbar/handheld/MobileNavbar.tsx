@@ -13,6 +13,7 @@ const MobileNavbar: React.FC = () => {
     setOpen(false);
   });
   return (
+    // A <nav> lecserélve <div>-re
     <div className="flex bg:hidden">
       <div
         className={`${
@@ -46,15 +47,6 @@ const MobileNavbar: React.FC = () => {
               );
             })}
           </li>
-          {/*Mint button */}
-          {/* <li>
-            <a
-              href={"#"}
-              className="navanimation flex items-center border-none py-2 px-4 text-xl"
-            >
-              <em className="font-Roboto font-[700]">Mint</em>
-            </a>
-          </li> */}
         </ul>
       </div>
     </div>

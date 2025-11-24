@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
-const NavbarElement = dynamic(() => import("./computer/NavbarElement"));
-const MobileNavbar = dynamic(() => import("./handheld/MobileNavbar"));
+
+const NavbarElement = dynamic(() => import("./computer/NavbarElement"), { ssr: false });
+const MobileNavbar = dynamic(() => import("./handheld/MobileNavbar"), { ssr: false });
 
 const Navbar: React.FC = () => {
   return (

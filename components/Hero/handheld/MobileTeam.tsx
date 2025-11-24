@@ -3,7 +3,7 @@ import {
   ArrowSmallLeftIcon,
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/outline";
-import Image from "next/future/image";
+import Image from "next/image";
 import { SliderData } from "./Sliderdata";
 //Grave Images
 //console.log(typeof SliderData);
@@ -17,11 +17,6 @@ const MobileTeam: React.FC = () => {
   const prevSlide = () => {
     setCurrent(current === 0 ? SliderData.length - 1 : current - 1);
   };
-  //Hibaellenőrzés
-  // if (!Array.isArray(slides) || slides.length <= 0) {
-  //   return null;
-  // }
-
   return (
     <section className="mt-[230vw] flex min-h-[160vw] flex-col bg:hidden">
       <div className="relative flex items-center justify-center">
